@@ -1,0 +1,40 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Video Calling Website UI Design</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-1">
+		<video id="remoteVideo" class="host-img"autoplay></video>
+          <div class="contarols">
+            <img src="https://i.postimg.cc/3NVtVtgf/chat.png">
+            <img src="https://i.postimg.cc/BQPYHG0r/disconnect.png">
+            <img src="https://i.postimg.cc/fyJH8G00/call.png" class="call-icon">
+            <img src="https://i.postimg.cc/bJFgSmFY/mic.png">
+            <img src="https://i.postimg.cc/Y2sDvCJN/cast.png">
+          </div>
+        </div>
+          <div class="col-2">
+              <video id="localVideo" autoplay muted style="height: 100%;width: 100%;"></video>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
